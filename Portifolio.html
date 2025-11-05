@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portifolio.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="img">
+                    <img src="https://i.pinimg.com/736x/4e/8e/89/4e8e8959211bf5c5a70f7401290de761.jpg" alt="">
+                </div>
+
+                <div class="menu-toggle" id="menu-toggle">
+                    &#9776;
+                </div>
+
+                <ul id="nav-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+
+            <div class="text">
+                <div class="im">
+                    <div class="hi">
+                        <h2>Hi, i am</h2>
+                        <h1>Ko'palboyev Amirxon</h1>
+                        <h3>Front-end Devolper</h3>
+                        <a target="_blank" href="">Resume</a>
+                    </div>
+                </div>
+                <div class="img1">
+                    <img src="photo_2025-10-27_15-21-14.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <h2 class="section_title">ABOUT ME</h2>
+            <div class="lorem">
+                <div class="img2">
+                    <img src="photo_2025-10-27_15-21-14.jpg" alt="">
+                </div>
+                <div class="ipsum">
+                    <h1>I, am Amirxon</h1>
+                    <p>Men zamonaviy veb-saytlar va IT loyihalar ishlab chiqish bilan <br> shug'ullanaman. Ishimda
+                        dizayn ,texnalogiya va ijodiy <br> yechimlarni uyg'unlashtirishga harakat qilaman. Mening <br>
+                        maqsadim har bir mijoz uchun qulay, zamonaviy va samarali <br> natija yaratish. Men uchun eng
+                        muhim narsa, natijadan mamnun <br> bo'lgan mijoz va mukamlal ishlaydigan loyiha. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2 class="section_title">Skills</h2>
+            <div class="cos">
+                <div class="skills">
+                    <div class="skills_list">
+
+
+                        <div class="skill">
+                            <div class="skill_name">
+                                <h3>HTML</h3>
+                                <h3>98%</h3>
+                            </div>
+                            <div class="line_box">
+                                <div class="line html"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="skills_list">
+
+
+                        <div class="skill">
+                            <div class="skill_name">
+                                <h3>CSS</h3>
+                                <h3>97%</h3>
+                            </div>
+                            <div class="line_box">
+                                <div class="line css"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="skills_list">
+
+
+                        <div class="skill">
+                            <div class="skill_name">
+                                <h3>Python</h3>
+                                <h3>95%</h3>
+                            </div>
+                            <div class="line_box">
+                                <div class="line python"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="skills_list">
+
+
+                        <div class="skill">
+                            <div class="skill_name">
+                                <h3>JavaScript</h3>
+                                <h3>90%</h3>
+                            </div>
+                            <div class="line_box">
+                                <div class="line javascript"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="skills_img">
+                    <img src="image 19.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section_title">contact</h2>
+            <div class="cont">
+                <form action="">
+                    <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <textarea name="" id="" placeholder="Your Message"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

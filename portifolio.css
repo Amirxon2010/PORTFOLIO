@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: rgba(30, 30, 30, 1);
+    height: 100vh;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav>.img {
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+nav>.img>img {
+    width: 100%;
+
+}
+
+nav>ul {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul>li>a {
+    font-size: 22px;
+
+}
+
+.text {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav>ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(30, 30, 30, 0.95);
+        gap: 20px;
+        padding: 20px 0;
+        transition: 0.3s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav>ul.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+
+
+.im>.hi>h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.im>.hi>h1 {
+    font-size: 60px;
+    color: white;
+    margin: 20px 0px 18px 0px;
+}
+
+.hi>h3 {
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 35px;
+}
+
+.hi>a {
+    border-radius: 10px;
+    padding: 12px 25px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+}
+
+
+
+.img1 {
+    width: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -100px;
+}
+
+.img1>img {
+    width: 100%;
+}
+
+/* About me */
+#about {
+    background-color: rgba(192, 192, 192, 1);
+
+}
+
+.section_title {
+    text-align: center;
+    padding: 80px 0px 50px 0px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.lorem {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+
+.img2 {
+    border-radius: 20%;
+    width: 400px;
+    overflow: hidden;
+    margin-top: -80px;
+    margin-bottom: 200px;
+}
+
+.img2>img {
+    width: 100%;
+}
+
+.ipsum>h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.ipsum>p {
+    line-height: 25px;
+
+}
+
+/* skills */
+#skills {
+    background-color: rgba(192, 192, 192, 1);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skills_list {
+    width: 450px;
+    margin: 20px;
+
+}
+
+.skill_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line_box {
+    width: 100%;
+    height: 15px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.line {
+    height: 15px;
+    background-color: aqua;
+    border-radius: 10px;
+
+
+}
+
+.html {
+    width: 98%;
+
+}
+
+.css {
+    width: 97%;
+
+}
+
+.python {
+    width: 95%;
+
+}
+
+.javascript {
+    width: 93%;
+
+}
+
+.cos {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+#contact {
+    background-color: rgba(192, 192, 192, 1);
+
+
+}
+
+.cont {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+form>input {
+    border: 1px rgb(86, 86, 86) solid;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 15px 300px 15px 25px;
+}
+
+form>textarea {
+    padding: 15px 310px 100px 25px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px 40px;
+    margin: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px rgb(86, 86, 86) solid;
+    outline: none;
+
+}
+
+#footer {
+    background-color: rgba(192, 192, 192, 1);
+
+
+}
+
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* 1️⃣ Katta planshetlar (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    nav>ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .img1 {
+        width: 350px;
+        margin-top: 30px;
+    }
+}
+
+/* 2️⃣ O‘rta ekranlar (planshetlar, max-width: 992px) */
+@media (max-width: 992px) {
+    nav {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    nav>ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .text {
+        margin-top: 80px;
+    }
+
+    .img1 {
+        width: 300px;
+    }
+
+    .lorem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .img2 {
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .skills_img {
+        display: none;
+    }
+
+    .cos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills_list {
+        width: 90%;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    form>input,
+    form>textarea {
+        padding: 15px 25px;
+        width: 90%;
+    }
+}
+
+/* 3️⃣ Kichik ekranlar (telefonlar, max-width: 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .hi>h2 {
+        font-size: 30px;
+    }
+
+    .hi>h3 {
+        font-size: 20px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img1 {
+        width: 250px;
+    }
+
+    .lorem {
+        margin-top: 50px;
+    }
+
+    .ipsum>h1 {
+        font-size: 28px;
+    }
+
+    .ipsum>p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .skills_list {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .line_box {
+        height: 10px;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    form>input,
+    form>textarea {
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* 4️⃣ Juda kichik ekranlar (max-width: 480px) */
+@media (max-width: 480px) {
+    nav>.img {
+        width: 60px;
+    }
+
+    .img1 {
+        width: 200px;
+    }
+
+    .hi>h1 {
+        font-size: 26px;
+    }
+
+    .hi>a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .section_title {
+        padding: 40px 0 20px 0;
+        font-size: 20px;
+    }
+
+    form>input,
+    form>textarea {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
